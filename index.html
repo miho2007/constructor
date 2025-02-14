@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web UI Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Drag & Drop UI Builder</h2>
+
+<!-- Tool Menu -->
+<div class="menu">
+    <select id="elementType">
+        <option value="button">Button</option>
+        <option value="input">Input</option>
+        <option value="div">Container</option>
+    </select>
+    <input type="color" id="elementColor" value="#ffffff">
+    <button id="addElement">Add Element</button>
+</div>
+
+<!-- Canvas -->
+<div id="canvas" class="canvas"></div>
+
+<!-- Generate Code Button -->
+<button id="generateCode">Generate Code</button>
+<textarea id="codeOutput" readonly></textarea>
+
+<script src="script.js"></script>
+</body>
+</html>
